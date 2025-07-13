@@ -192,6 +192,17 @@ function generateHTML(episode) {
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0,0,0,0.15);
         }
+        .bbc-button {
+            background-color: #bb1919;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .bbc-button:hover {
+            background-color: #9a1515;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
         .footer {
             margin-top: 40px;
             padding-top: 20px;
@@ -220,6 +231,9 @@ function generateHTML(episode) {
                 <a href="${episode.link}" class="button download-button" download>📥 Download MP3</a>
                 <a href="https://podcasts.apple.com/podcast/id73330895?i=${episode.trackId || (episode.guid ? episode.guid.replace(/^.*:/, "").replace(/^.*\//, "").replace(/\.[^.]*$/, "") : "")}" class="button apple-button" target="_blank">
                   🍎 Open in Apple Podcasts
+                </a>
+                <a href="https://www.bbc.co.uk/sounds/play/${episode.guid ? episode.guid.replace(/^.*:/, "") : ""}" class="button bbc-button" target="_blank">
+                  🎧 Open in BBC Sounds
                 </a>
             </div>
         </div>

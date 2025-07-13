@@ -1,0 +1,21 @@
+{
+  "name": "in-our-sleepy-time",
+  "version": "1.0.0",
+  "description": "A static GitHub Pages site that presents a random episode of the BBC podcast 'In Our Time' daily",
+  "main": "update.js",
+  "scripts": {
+    "update": "node update.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "podcast",
+    "bbc",
+    "in-our-time",
+    "github-pages"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "xml2js": "^0.6.2"
+  }
+}

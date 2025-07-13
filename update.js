@@ -219,10 +219,7 @@ function generateHTML(episode) {
             <div class="buttons">
                 <a href="${episode.link}" class="button download-button" download>📥 Download MP3</a>
                 <a href="https://podcasts.apple.com/podcast/id73330895?i=${episode.trackId || (episode.guid ? episode.guid.replace(/^.*:/, "").replace(/^.*\//, "").replace(/\.[^.]*$/, "") : "")}" class="button apple-button" target="_blank">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M13.386 10.955c-.022-2.366 1.932-3.502 2.02-3.558-.11-.521-.867-1.498-2.342-1.498-1.385 0-2.58.803-3.268.803-.7 0-1.763-.784-2.9-.763-1.489.022-2.864.866-3.631 2.202-1.549 2.69-.396 6.668.864 8.848.62 1.069 1.36 2.269 2.33 2.225.935-.043 1.288-.72 2.418-.72 1.13 0 1.45.72 2.43.698.947-.022 1.645-1.086 2.263-2.158.713-1.238 1.006-2.438 1.028-2.5-.022-.01-1.97-.755-1.99-2.998-.022-1.873 1.53-2.77 1.6-2.815-.871-1.287-2.228-1.43-2.71-1.465-.087-.003-.174-.005-.263-.005zm-.627-2.544c.514-.622 1.861-1.083 1.861-1.083s.162 1.377-.514 2.7c-.676 1.322-1.495 1.104-1.495 1.104s-.366-1.1.515-1.722z"/>
-                    </svg>
-                    Open in Apple Podcasts
+                  🍎 Open in Apple Podcasts
                 </a>
             </div>
         </div>
@@ -240,14 +237,14 @@ async function getAppleTrackId(episodeGuid) {
   try {
     console.log("Fetching Apple Podcasts lookup data...");
     const appleData = await fetchAppleLookup("https://itunes.apple.com/lookup?id=73330895&entity=podcastEpisode&limit=500");
-    
+
     // Filter for podcast episodes only
     const podcastEpisodes = appleData.results.filter(result => result.wrapperType === "podcastEpisode");
     console.log(`Found ${podcastEpisodes.length} podcast episodes in Apple lookup`);
-    
+
     // Find the episode with matching episodeGuid
     const matchingEpisode = podcastEpisodes.find(episode => episode.episodeGuid === episodeGuid);
-    
+
     if (matchingEpisode) {
       console.log(`Found matching Apple episode with trackId: ${matchingEpisode.trackId}`);
       return matchingEpisode.trackId;

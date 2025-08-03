@@ -23,3 +23,4 @@ http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nond
 http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss/proto/http/vpid/p0l35n1c.mp3
 http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss/proto/http/vpid/p0ddpcf3.mp3
 http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss/proto/http/vpid/p08szv02.mp3
+http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss/proto/http/vpid/p02q5yjc.mp3

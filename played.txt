@@ -389,3 +389,4 @@ http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nond
 http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss/proto/http/vpid/p02q5ydt.mp3
 http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss/proto/http/vpid/p05hgmzj.mp3
 http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss/proto/http/vpid/p08s9x0f.mp3
+http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss/proto/http/vpid/p02q5kxx.mp3
